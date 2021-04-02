@@ -1,0 +1,256 @@
+/*This CSS is based off of BobRascal's DIM. It has been completely modified, however, with new things added. Made by Supernova283, please do not use. :)
+*Copyright Supernova283 2021 vibing.css, don't use without this header.
+*
+*Version 0.1
+*
+*If at any time you need help customizing the CSS, please PM Supernova283!
+*
+*Special thanks to:
+*BobRascal
+*player01
+*Blueclay
+*TheFlamingoHacker 
+*/
+ 
+/*Instructions for the animations:
+*If you want a specific part of the rotating hues to be gone, comment the one animation: huerotate line and it will stop. What I mean by comment is putting the one line into these forward slash asterisk tags.
+*If you want all of the animations to be gone, simply comment the @keyframes line down below. Every one of the animations will be gone, you don't have to comment any other lines.
+*If you need any help with it, feel free to PM Supernova283! 
+*/
+ 
+ 
+/*Username Colors Credit To TheFlamingoHacker*/
+a[href="/community/user/492168"] { /*Supernova283*/
+  color: #9a00ff !important;
+  font-weight: bold !important;
+}
+a[href="/community/user/568240"] { /*Cayle*/
+  color: #069420 !important;
+  font-weight: bold !important;
+}
+a[href="/community/user/542237"] { /*Goddess101*/
+  color: #F4CCCC !important;
+  font-weight: bold !important; 
+}
+a[href="/community/user/516046"] { /*WisePenguin*/
+  color: #073763 !important;
+  font-weight: bold !important; 
+}
+a[href="/community/user/478310"] { /*Blueclay*/
+  color: pink !important;
+  font-weight: bold !important; 
+}
+a[href="/community/user/492621"] { /*StanziMarcello*/
+  color: #E69318 !important;
+  font-weight: bold !important; 
+}
+a[href="/community/user/482975"] { /*aryanpadarthi*/
+  color: #fc0303 !important;
+  font-weight: bold !important; 
+}
+
+ 
+@keyframes huerotate {
+    0% {filter: hue-rotate(0deg);}
+    25% {filter: hue-rotate(90deg);}
+    50% {filter: hue-rotate(180deg);}
+    75% {filter: hue-rotate(270deg);}
+    100% {filter: hue-rotate(360deg);}
+}
+ 
+div#content, h1, div#page-wrapper {
+    animation: huerotate 4s infinite;
+}
+ 
+/*Colors*/
+div .entrywrap, div .entrywrap-hover {
+background-color: lightgrey;
+}
+div#side, div#content, div#main {
+    background-color: gold;
+}
+div#page-wrapper {
+    background-color: pink;
+}
+body {
+    background-color: #efefef;
+}
+div.entrywrap {
+    border-color: chocolate!important;
+}
+textarea#message.inputbox {
+    background-color: pink;
+}
+ 
+ 
+ 
+/*Aligning the headers and post new entry to the center*/
+h1, h2, p#post-new-entry-p {
+    text-align: center;
+}
+ 
+/*Emojis spin when you hover over them*/
+img.bbcode_smiley:hover {
+    animation: spin 0.65s;
+    animation-iteration-count: infinite;
+}
+ 
+ 
+/*Hiding plus image by archives*/
+img.month-image {
+    display: none;
+}
+ 
+/*Post New Entry*/
+img#post-new-entry-img {
+    display: none;
+}
+#post-new-entry:before {
+    font-family: AoPS;
+    content: '* ';
+}
+/*Making things Cursive*/
+div#page-wrapper, h1, input#blog_keywords.inputbox.search, input.button2, div.cmty-heading-text, div.cmty-posting-forum-name, span.cmty-post-in, span.cmty-posting-preview-bar-hidden {
+    font-family: Cursive
+}
+input.cmty-cancel-button.btn.btn-primary {
+    font-family: Cursive;
+    background-color: pink;
+}
+input.cmty-submit-button.btn.btn-primary {
+    font-family: Cursive;
+    background-color: purple;
+}
+ 
+/*Quotes*/
+.bbcode_quote, .bbcode_quote .bbcode_quote_head, .bbcode_quote:after {
+    background-color: lightgreen;
+}
+.bbcode_quote:before {
+    border-color: lightgreen;
+}
+ 
+ 
+/*Navigation Box*/
+div #navigation_box {
+  border: none;
+}
+ 
+ 
+ 
+/*Header*/
+div#header h1 {
+    font-size: 30px;
+}
+div#header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    line-height: 140px;
+    background-color: darkblue; /* Internet Explorer */
+}
+#header h1:hover {
+    text-decoration: none;
+    font-size:100px;
+    transition:1s;
+    overflow:hidden;
+    transition:0.2s;
+}
+ 
+ 
+/*Wrapper*/
+#main{
+  width: calc(100% - 258px);
+  padding: 10px
+}
+#wrapper{
+  width: 80%;
+}
+ 
+/*Search Widget*/
+#search-widget > div {
+    background-color: #0000;
+}
+#search-widget fieldset > *{
+  display: inline;
+  border: none;
+}
+ 
+/*Entry*/
+div.entry {
+  border-bottom-style: solid;
+}
+ 
+/*Feed username color patch. Original code by AoPS.*/
+.cmty-post .cmty-user-admin a,.cmty-post .cmty-user-admin:before{color: #009fad !important;}
+.cmty-forum-admin a{color: #900 !important;}
+.cmty-forum-mod a{color: #090 !important;}
+ 
+.cmty-post-edit-info {
+    display: none !important;
+}
+ 
+#navigation_box{
+    background-color: purple;
+    font-color: black;
+    font-family: Roboto;
+    border-style: none;
+    border-color: black;
+}
+ 
+/*Shoutbox*/
+li.blog-shout.row1 {
+    background-color: DeepSkyBlue;
+}
+li.blog-shout.row1:hover {
+    animation: spin 1s;
+    animation-iteration-count: 1;
+}
+li.blog-shout.row2:hover {
+    animation: spin 1s;
+    animation-iteration-count: 1;
+}
+li.row1:hover {
+    color: white;
+    transition: 2s ease;
+}
+li.row2:hover {
+    color: royalblue;
+    transition: 2s ease;
+}
+div.aops-scroll-slider {
+    background-color: royalblue;
+}
+ 
+/*Tips, Hides, Tags, Links*/
+span.cmty-tip-header {
+    background-color: gray;
+}
+span.cmty-hide-heading.faux-link {
+    background-color: lightgreen;
+    color: black;
+}
+a.bbcode_url {
+    text-decoration: none;
+    color: indigo;
+}
+div.cmty-item-tag {
+    color: lightgrey;
+}
+ 
+/*Hover Effects*/
+div#search-widget.block.widget:hover, div#about-owner-widget.block.widget:hover, div#user-menu-widget.block.user_menu:hover, div.widget-content:hover, div.widget-title:hover, div#stats-widget.block.widget:hover {
+    background-color: purple;
+    transition: 2s ease;
+    animation: huerotate 3s infinite;
+}
+h1:hover, h2:hover, p#post-new-entry-p:hover  {
+    background-color: green;
+    transition: 2s ease;
+    animation: huerotate 3s infinite;
+}
+textarea#message.inputbox:hover {
+    background-color: lightgreen;
+    transition: 2s ease;
+    animation: huerotate 3s infinite;
+}
