@@ -1,4 +1,4 @@
-/*This CSS is based off of BobRascal's DIM. It has been completely modified, however, with new things added. Made by Supernova283, please do not use. :)
+/*This CSS is based off of BobRascal's DIM. It has been completely modified, however, with new things added. Made by Supernova283, please do not steal. :)
 *Copyright Supernova283 2021 vibing.css, don't use without this header.
 *
 *Version 0.1
@@ -17,38 +17,6 @@
 *If you want all of the animations to be gone, simply comment the @keyframes line down below. Every one of the animations will be gone, you don't have to comment any other lines.
 *If you need any help with it, feel free to PM Supernova283! 
 */
- 
- 
-/*Username Colors Credit To TheFlamingoHacker*/
-a[href="/community/user/492168"] { /*Supernova283*/
-  color: #9a00ff !important;
-  font-weight: bold !important;
-}
-a[href="/community/user/568240"] { /*Cayle*/
-  color: #069420 !important;
-  font-weight: bold !important;
-}
-a[href="/community/user/542237"] { /*Goddess101*/
-  color: #F4CCCC !important;
-  font-weight: bold !important; 
-}
-a[href="/community/user/516046"] { /*WisePenguin*/
-  color: #073763 !important;
-  font-weight: bold !important; 
-}
-a[href="/community/user/478310"] { /*Blueclay*/
-  color: pink !important;
-  font-weight: bold !important; 
-}
-a[href="/community/user/492621"] { /*StanziMarcello*/
-  color: #E69318 !important;
-  font-weight: bold !important; 
-}
-a[href="/community/user/482975"] { /*aryanpadarthi*/
-  color: #fc0303 !important;
-  font-weight: bold !important; 
-}
-
  
 @keyframes huerotate {
     0% {filter: hue-rotate(0deg);}
@@ -159,13 +127,13 @@ div#header h1 {
  
  
 /*Wrapper*/
-#main{
+/*#main{
   width: calc(100% - 258px);
   padding: 10px
 }
 #wrapper{
   width: 80%;
-}
+}*/
  
 /*Search Widget*/
 #search-widget > div {
@@ -237,6 +205,19 @@ a.bbcode_url {
 div.cmty-item-tag {
     color: lightgrey;
 }
+
+#wrapper {
+    width: 100%;
+}
+#main {
+    width: 75%;
+}
+div#side {
+    width: 25%;
+}
+div#shouts-widget {
+    width: 240px;
+}
  
 /*Hover Effects*/
 div#search-widget.block.widget:hover, div#about-owner-widget.block.widget:hover, div#user-menu-widget.block.user_menu:hover, div.widget-content:hover, div.widget-title:hover, div#stats-widget.block.widget:hover {
@@ -253,4 +234,62 @@ textarea#message.inputbox:hover {
     background-color: lightgreen;
     transition: 2s ease;
     animation: huerotate 3s infinite;
+}
+
+/*AoPS Font*/
+.blog-edit-post, .blog-moderate-topic, a.post-replies, .blog-delete-post, .blog-report-post, a.post-comment {
+    text-decoration: none !important;
+    font-size: 15px;
+}
+.blog-delete-post {
+    font-size: 0px;
+}
+.blog-delete-post:before {
+    font-family: AoPS;
+    font-size: 15px;
+    content: 'J ';
+}
+.blog-report-post {
+    font-size: 0px;
+}
+.blog-report-post:before {
+    font-family: AoPS;
+    content: 'Z';
+    font-size: 15px;
+}
+.blog-edit-post {
+    font-size: 0px;
+}
+.blog-edit-post:before {
+    font-family: AoPS;
+    content: 'L ';
+    font-size: 15px;
+}
+.blog-moderate-topic {
+    font-size: 0px;
+}
+.blog-moderate-topic:before {
+    font-family: AoPS;
+    content: 'X';
+    font-size: 15px;
+}
+a.post-replies:after {
+    font-family: AoPS;
+    content: 'x';
+}
+a.post-comment {
+    font-size: 0px;
+}
+a.post-comment:before {
+    font-family: AoPS;
+    font-size: 15px;
+    content: 'V';
+}
+#post-new-entry {
+    font-size: 0px;
+}
+#post-new-entry:before {
+    font-family: AoPS;
+    content: '*';
+    font-size: 20px;
 }
